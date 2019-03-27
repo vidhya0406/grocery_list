@@ -1,0 +1,9 @@
+flask
+python-dotenv
+authlib
+six
+SQLAlchemy
+httplib2==0.10.3
+requests
+Jinja2==2.9.6
+urllib3
