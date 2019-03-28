@@ -1,33 +1,33 @@
-# Auth0 Python Web App Sample
+# Grocery List Application 
 
-This sample demonstrates how to add authentication to a Python web app using Auth0.
+[![Build Status](https://travis-ci.org/vidhya0406/grocery_list.svg?branch=master)](https://travis-ci.org/vidhya0406/grocery_list)
+
+
+This application provides a list of items within a variety of categories as well as provide a user registration and authentication system. Registered users will have the ability to post, edit and delete their own items.
 
 # Running the App
 
 To run the sample, make sure you have `python` and `pip` installed.
 
 Rename `.env.example` to `.env` and populate it with the client ID, domain, secret, callback URL and audience for your
-Auth0 app. If you are not implementing any API you can use `https://YOUR_DOMAIN.auth0.com/userinfo` as the audience. 
-Also, add the callback URL to the settings section of your Auth0 client.
-
-Register `http://localhost:3000/callback` as `Allowed Callback URLs` and `http://localhost:3000` 
-as `Allowed Logout URLs` in your client settings.
+Auth0 app. 
 
 Run `pip install -r requirements.txt` to install the dependencies and run `python server.py`. 
 The app will be served at [http://localhost:3000/](http://localhost:3000/).
 
 # Running the App with Docker
 
-To run the sample, make sure you have `docker` installed.
-
-To run the sample with [Docker](https://www.docker.com/), make sure you have `docker` installed.
+To run the application, make sure you have `docker` installed.
 
 Rename the .env.example file to .env, change the environment variables, and register the URLs as explained [previously](#running-the-app).
 
 Run `sh exec.sh` to build and run the docker image in Linux or run `.\exec.ps1` to build 
 and run the docker image on Windows.
 
-## What is Auth0?
+## OAuth Implementation
+This application uses Auth0- IaaS to implement the third party OAuth authentication.
+
+### What is Auth0?
 
 Auth0 helps you to:
 
@@ -41,21 +41,7 @@ enterprise identity systems like **Windows Azure AD, Google Apps, Active Directo
 * Analytics of how, when and where users are logging in.
 * Pull data from other sources and add it to the user profile, through [JavaScript rules](https://auth0.com/docs/rules).
 
-## Create a free account in Auth0
+### Create a free account in Auth0
 
 1. Go to [Auth0](https://auth0.com) and click Sign Up.
-2. Use Google, GitHub or Microsoft Account to login.
-
-## Issue Reporting
-
-If you have found a bug or if you have a feature request, please report them at this repository issues section.
-Please do not report security vulnerabilities on the public GitHub issue tracker. 
-The [Responsible Disclosure Program](https://auth0.com/whitehat) details the procedure for disclosing security issues.
-
-## Author
-
-[Auth0](https://auth0.com)
-
-## License
-
-This project is licensed under the MIT license. See the [LICENSE](LICENCE) file for more info.
+2. Use Google, GitHub or Facebook Account to login.
