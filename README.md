@@ -10,9 +10,13 @@ This application provides a list of items within a variety of categories as well
 To run the sample, make sure you have `python` and `pip` installed.
 
 Rename `.env.example` to `.env` and populate it with the client ID, domain, secret, callback URL and audience for your
-Auth0 app. 
+Auth0 app.
 
-Run `pip install -r requirements.txt` to install the dependencies and run `python server.py`. 
+For verification purposes, Auth0 app has been created and the details of client ID, secret, domain, etc., can be found here: https://jsonblob.com/5b08bac1-51e5-11e9-9fb6-3777fb6f71ab
+
+Populate these details in the `.env` file.
+
+Run `pip install -r requirements.txt` to install the dependencies and run `python server.py`.
 The app will be served at [http://localhost:3000/](http://localhost:3000/).
 
 # Running the App with Docker
